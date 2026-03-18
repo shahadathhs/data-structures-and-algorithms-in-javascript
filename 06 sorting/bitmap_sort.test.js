@@ -1,6 +1,6 @@
 const bitmapSort = require("./bitmap_sort");
 
-const data = require("../data");
+const data = require("../data/data");
 console.log(bitmapSort(data));
 
 const data1 = [3, 1, 4, 5, 9, 2, 6];

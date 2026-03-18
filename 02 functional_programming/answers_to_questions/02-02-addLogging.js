@@ -1,17 +1,19 @@
 /* eslint-disable no-func-assign */
 /* eslint-disable no-unused-vars */
 
-const addLogging = (fn) => (...args) => {
-  console.log(`Entering ${fn.name}: ${args}`);
-  try {
-    const valueToReturn = fn(...args);
-    console.log(`Exiting ${fn.name} returning ${valueToReturn}`);
-    return valueToReturn;
-  } catch (thrownError) {
-    console.log(`Exiting ${fn.name} throwing ${thrownError}`);
-    throw thrownError;
-  }
-};
+const addLogging =
+  (fn) =>
+  (...args) => {
+    console.log(`Entering ${fn.name}: ${args}`);
+    try {
+      const valueToReturn = fn(...args);
+      console.log(`Exiting ${fn.name} returning ${valueToReturn}`);
+      return valueToReturn;
+    } catch (thrownError) {
+      console.log(`Exiting ${fn.name} throwing ${thrownError}`);
+      throw thrownError;
+    }
+  };
 
 function add(a, b) {
   return a + b;

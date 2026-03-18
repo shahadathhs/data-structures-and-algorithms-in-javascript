@@ -13,7 +13,7 @@ const infinitySearch = (arr, key) => {
   return i < n && key === arr[i] ? i : -1;
 };
 
-const data32 = require("../../data_sorted_32");
+const data32 = require("../../data/data_sorted_32");
 console.log(data32);
 console.log("Search for 1", infinitySearch(data32, 1));
 console.log("Search for 3", infinitySearch(data32, 3));

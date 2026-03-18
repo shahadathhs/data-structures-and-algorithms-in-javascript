@@ -11,18 +11,18 @@
   "license": "UNLICENSED",
   "main": "index.js",
   "devDependencies": {
-    "@eslint/js": "^9.31.0",
-    "@eslint/json": "^0.13.0",
-    "@eslint/markdown": "^7.0.0",
-    "eslint": "^9.31.0",
-    "globals": "^16.3.0",
-    "prettier": "^3.6.2"
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.1.0",
+    "@eslint/markdown": "^7.5.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1"
   },
   "scripts": {
     "lint": "npx eslint ./**/*.js",
     "lint:fix": "npx eslint ./**/*.js --fix",
     "lint:format": "npx eslint ./**/*.js --fix --quiet",
-    "format": "npx prettier --write ./**/*.js",
-    "format:check": "npx prettier --check ./**/*.js"
+    "format": "npx prettier --write \"**/*.{js,mjs,cmd,json,md}\"",
+    "format:check": "npx prettier --check \"**/*.{js,mjs,cmd,json,md}\""
   }
 }

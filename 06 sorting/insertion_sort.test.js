@@ -2,7 +2,7 @@ const insertionSort1 = require("./insertion_sort_1");
 const insertionSort2 = require("./insertion_sort_2");
 const insertionSort3 = require("./insertion_sort_3");
 
-const data = require("../data32");
+const data = require("../data/data32");
 
 console.log("===", data.join("-"));
 console.log(">>>", insertionSort1([...data]).join("-"));

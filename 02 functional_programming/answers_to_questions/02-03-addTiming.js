@@ -3,20 +3,22 @@
 
 const { performance } = require("perf_hooks");
 
-const addTiming = (fn) => (...args) => {
-  const output = (text, name, tStart, tEnd) =>
-    console.log(`${name} - ${text} - Time: ${tEnd - tStart} ms`);
+const addTiming =
+  (fn) =>
+  (...args) => {
+    const output = (text, name, tStart, tEnd) =>
+      console.log(`${name} - ${text} - Time: ${tEnd - tStart} ms`);
 
-  const tStart = performance.now();
-  try {
-    const valueToReturn = fn(...args);
-    output("normal exit", fn.name, tStart, performance.now());
-    return valueToReturn;
-  } catch (thrownError) {
-    output("exception thrown", fn.name, tStart, performance.now());
-    throw thrownError;
-  }
-};
+    const tStart = performance.now();
+    try {
+      const valueToReturn = fn(...args);
+      output("normal exit", fn.name, tStart, performance.now());
+      return valueToReturn;
+    } catch (thrownError) {
+      output("exception thrown", fn.name, tStart, performance.now());
+      throw thrownError;
+    }
+  };
 
 function add(a, b) {
   return a + b;

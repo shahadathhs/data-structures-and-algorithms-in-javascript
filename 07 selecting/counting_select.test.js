@@ -1,6 +1,6 @@
 const countingSelect = require("./counting_select");
 
-const data = require("../data32");
+const data = require("../data/data32");
 
 console.log(data.join("-"));
 console.log([...data].sort((a, b) => a - b).join("-"));
@@ -13,7 +13,7 @@ console.log(countingSelect([...data], 30)); // 93
 console.log(countingSelect([...data], 31)); // 97
 console.log(countingSelect([...data], 6, 3, 10)); // 12
 
-const data2 = require("../data10000");
+const data2 = require("../data/data10000");
 console.log(">>>", countingSelect([...data2], 2030)); // 2903739
 console.log(">>>", countingSelect([...data2], 4010)); // 4654014
 console.log(">>>", countingSelect([...data2], 5000)); // 5568675

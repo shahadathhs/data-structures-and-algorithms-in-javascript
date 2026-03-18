@@ -1,9 +1,9 @@
 const isConnected = (graph) => {
   const n = graph.length;
 
-const groups = Array(n)
-  .fill(0)
-  .map(() => ({ ptr: null, size: 1 }));
+  const groups = Array(n)
+    .fill(0)
+    .map(() => ({ ptr: null, size: 1 }));
 
   let count = n;
 
@@ -16,25 +16,25 @@ const groups = Array(n)
     }
   };
 
-for (let i = 0; i < n; i++) {
-  for (let j = i + 1; j < n; j++) {
-    if (graph[i][j]) {
-      const pf = findParent(groups[i]);
-      const pt = findParent(groups[j]);
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (graph[i][j]) {
+        const pf = findParent(groups[i]);
+        const pt = findParent(groups[j]);
 
-      if (pf !== pt) {
-        count--;
-        if (pf.size < pt.size) {
-          pt.size += pf.size;
-          pf.ptr = pt;
-        } else {
-          pf.size += pt.size;
-          pt.ptr = pf;
+        if (pf !== pt) {
+          count--;
+          if (pf.size < pt.size) {
+            pt.size += pf.size;
+            pf.ptr = pt;
+          } else {
+            pf.size += pt.size;
+            pt.ptr = pf;
+          }
         }
       }
     }
   }
-}
 
   return count === 1;
   // ...or return count to learn how

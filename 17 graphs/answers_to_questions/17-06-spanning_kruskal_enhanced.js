@@ -49,14 +49,14 @@ const spanning = (graph) => {
     .fill(0)
     .map(() => ({ ptr: null, size: 1 }));
 
-const findParent = (x) => {
-  if (x.ptr !== null) {
-    x.ptr = findParent(x.ptr);
-    return x.ptr;
-  } else {
-    return x;
-  }
-};
+  const findParent = (x) => {
+    if (x.ptr !== null) {
+      x.ptr = findParent(x.ptr);
+      return x.ptr;
+    } else {
+      return x;
+    }
+  };
 
   /* Iterative version:
   const findParent = (x) => {

@@ -9,7 +9,7 @@ const sinkingSort = (arr, from = 0, to = arr.length - 1) => {
   return arr;
 };
 
-const data = require("../data");
+const data = require("../data/data");
 
 console.log(">>>", sinkingSort([...data]).join("-"));
 console.log(">>>", sinkingSort([...data], 3, 10).join("-"));

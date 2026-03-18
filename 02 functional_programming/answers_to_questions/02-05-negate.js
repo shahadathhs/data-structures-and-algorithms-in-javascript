@@ -1,4 +1,7 @@
-const negate = (fn) => (...args) => !fn(...args);
+const negate =
+  (fn) =>
+  (...args) =>
+    !fn(...args);
 
 const isAdult = (x) => x >= 21;
 

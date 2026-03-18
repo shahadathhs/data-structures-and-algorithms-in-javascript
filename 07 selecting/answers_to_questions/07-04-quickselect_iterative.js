@@ -30,7 +30,7 @@ const qSelect = (arr, k, left = 0, right = arr.length - 1) => {
   return arr[k];
 };
 
-const data = require("../data");
+const data = require("../data/data");
 
 console.log(data.join("-"));
 console.log([...data].sort((a, b) => a - b).join("-"));

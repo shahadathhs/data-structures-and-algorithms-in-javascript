@@ -32,7 +32,7 @@ const radixSort = (arr, from = 0, to = arr.length - 1) => {
 
 module.exports = radixSort;
 
-const data = require("../data32");
+const data = require("../data/data32");
 
 console.log(">>>", radixSort([...data]).join("-"));
 console.log(">>>", radixSort([...data], 3, 10).join("-"));

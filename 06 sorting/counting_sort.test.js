@@ -1,6 +1,6 @@
 const countingSort = require("./counting_sort");
 
-const data = require("../data32");
+const data = require("../data/data32");
 console.log(countingSort(data));
 
 const data1 = [6, 6, 2, 5, 8, 3, 2, 8, 6, 5];

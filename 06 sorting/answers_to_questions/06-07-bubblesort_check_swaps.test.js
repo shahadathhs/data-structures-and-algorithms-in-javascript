@@ -1,6 +1,6 @@
 const bubbleSort = require("./bubblesort");
 
-const data = require("../data");
+const data = require("../data/data");
 
 console.log(">>>", bubbleSort([...data]).join("-"));
 console.log(">>>", bubbleSort([...data], 3, 10).join("-"));

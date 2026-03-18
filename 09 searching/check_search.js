@@ -1,5 +1,7 @@
 const checkSearch = (fn, sorted = false) => {
-  const data32 = sorted ? require("../data_sorted_32") : require("../data32");
+  const data32 = sorted
+    ? require("../data/data_sorted_32")
+    : require("../data/data32");
 
   const verify = (v, i, f) => {
     if (i !== f) {
