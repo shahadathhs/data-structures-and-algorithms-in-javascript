@@ -1,12 +1,12 @@
 # Data Structures and Algorithms in JavaScript
 
-A comprehensive collection of algorithms and data structures in JavaScript, featuring code examples from the book **"Mastering Algorithms and Data Structures in JavaScript"** by Federico Kereki.
+A comprehensive collection of algorithms and data structures in JavaScript, based on the book [**"Mastering Algorithms and Data Structures in JavaScript"**](./data_structures_and_algorithms_in_javascript.pdf) by Federico Kereki.
 
 ## 📚 Overview
 
-This repository contains the original working implementations from the book, organized and maintained for easy reference and learning. Each chapter focuses on specific concepts with working code examples and tests, exactly as provided by the author.
+This repository contains the original working implementations from the book, organized and maintained for easy reference and learning. Each chapter focuses on specific concepts with working code examples and tests, exactly as provided by the author. Read the full book here: [**Mastering Algorithms and Data Structures in JavaScript (PDF)**](./data_structures_and_algorithms_in_javascript.pdf).
 
-## 🎯 What's Inside
+## 📚 Content Overview
 
 ### Core Topics
 
@@ -122,54 +122,6 @@ console.log(find(tree, 3)); // true
 └── data/                           # Test data files
 ```
 
-## 🧪 Testing
-
-Many algorithms include test files (`.test.js`) that demonstrate usage and verify correctness:
-
-```bash
-# Run a specific test file
-node "06 sorting/quicksort.test.js"
-node "17 graphs/cycle_detection_tarjan.js"
-```
-
-## 📝 Features
-
-- **Book Code** - Original implementations from "Mastering Algorithms and Data Structures in JavaScript"
-- **Comprehensive Coverage** - 18 chapters covering essential CS topics
-- **Working Code** - Every algorithm is tested and functional
-- **Modern JavaScript** - ES6+ syntax and best practices
-- **Educational** - Clear implementations with comments
-- **Organized** - Structured for easy navigation and reference
-
-## 🤝 Contributing
-
-This is an educational repository. Feel free to:
-
-- Report issues or bugs
-- Suggest improvements
-- Submit pull requests for optimizations
-- Add documentation
-
-## 📄 License
-
-UNLICENSED - Private repository
-
-## 👤 Maintainer
-
-**Shahadath Hossen Sajib**
-
-- GitHub: [@shahadathhs](https://github.com/shahadathhs)
-
-_Repository organizer and maintainer. All original code implementations by Federico Kereki._
-
-## 🙏 Acknowledgments
-
-All code implementations are from the book **"Mastering Algorithms and Data Structures in JavaScript"** by **Federico Kereki**.
-
-This repository serves as an organized collection of the book's working code examples, maintained with proper tooling (ESLint, Prettier) for easier use and reference.
-
-📖 **Book:** [Mastering Algorithms and Data Structures in JavaScript](https://www.packtpub.com/product/mastering-algorithms-and-data-structures-in-javascript/9781801071515) by Federico Kereki
-
 ---
 
-**Note:** This repository contains code from "Mastering Algorithms and Data Structures in JavaScript" by Federico Kereki, organized for educational purposes. The implementations prioritize clarity and learning, exactly as presented in the book.
+_All implementations are from the book "Mastering Algorithms and Data Structures in JavaScript" by Federico Kereki._

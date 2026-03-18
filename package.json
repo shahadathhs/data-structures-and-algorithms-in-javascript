@@ -23,6 +23,7 @@
     "lint:fix": "npx eslint ./**/*.js --fix",
     "format": "npx prettier --check \"**/*.{js,mjs,cmd,json,md}\"",
     "format:fix": "npx prettier --write \"**/*.{js,mjs,cmd,json,md}\"",
-    "check": "pnpm run lint && pnpm run format"
+    "check": "pnpm run lint && pnpm run format",
+    "fix": "pnpm run lint:fix && pnpm run format:fix"
   }
 }
