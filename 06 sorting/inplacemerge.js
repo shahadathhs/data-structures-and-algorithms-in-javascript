@@ -1,7 +1,9 @@
+/*
 const print = (arr, ll, mm, rr) =>
   arr.slice(ll, mm + 1).join("-") +
   "   " +
   arr.slice(mm + 1, rr + 1).join("-");
+*/
 /*
 const testOrder = (arr, f, t) => {
   if (
@@ -46,8 +48,8 @@ const newMerge = (arr, ll, mm, rr, compares = 0, swaps = 0, passes = 1) => {
     }
 
     let lx, rx;
-    for (lx = ll; smaller(lx, mm + 1); lx++) {}
-    for (rx = rr; smaller(mm, rx); rx--) {}
+    for (lx = ll; smaller(lx, mm + 1); lx++);
+    for (rx = rr; smaller(mm, rx); rx--);
     // arr[mm+1] should go into arr[lx], and arr[lx...mm] should be pushed right
     // arr[mm] should go into arr[rx], and arr[mm+1...rx] should be pushed left
 
@@ -56,8 +58,8 @@ const newMerge = (arr, ll, mm, rr, compares = 0, swaps = 0, passes = 1) => {
     reverse(arr, lx, rx);
 
     mm = lx + rx - mm - 1;
-    for (ll = lx + 1; smaller(ll, mm + 1) && ll < mm; ll++) {}
-    for (rr = rx - 1; smaller(mm, rr) && rr > mm; rr--) {}
+    for (ll = lx + 1; smaller(ll, mm + 1) && ll < mm; ll++);
+    for (rr = rx - 1; smaller(mm, rr) && rr > mm; rr--);
 
     let swapped;
     do {

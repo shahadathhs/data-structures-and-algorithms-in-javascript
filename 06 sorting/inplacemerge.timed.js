@@ -1,4 +1,4 @@
-const newMerge = (arr, ll, mm, rr, compares = 0, swaps = 0, passes = 1) => {
+const newMerge = (arr, ll, mm, rr) => {
   for (;;) {
     const swap = (p, q) => {
       [arr[p], arr[q]] = [arr[q], arr[p]];
@@ -21,16 +21,16 @@ const newMerge = (arr, ll, mm, rr, compares = 0, swaps = 0, passes = 1) => {
     }
 
     let lx, rx;
-    for (lx = ll; smaller(lx, mm + 1); lx++) {}
-    for (rx = rr; smaller(mm, rx); rx--) {}
+    for (lx = ll; smaller(lx, mm + 1); lx++);
+    for (rx = rr; smaller(mm, rx); rx--);
 
     reverse(arr, lx, mm);
     reverse(arr, mm + 1, rx);
     reverse(arr, lx, rx);
 
     mm = lx + rx - mm - 1;
-    for (ll = lx + 1; smaller(ll, mm + 1) && ll < mm; ll++) {}
-    for (rr = rx - 1; smaller(mm, rr) && rr > mm; rr--) {}
+    for (ll = lx + 1; smaller(ll, mm + 1) && ll < mm; ll++);
+    for (rr = rx - 1; smaller(mm, rr) && rr > mm; rr--);
 
     let swapped;
     do {
@@ -47,8 +47,6 @@ const newMerge = (arr, ll, mm, rr, compares = 0, swaps = 0, passes = 1) => {
         swapped = true;
       }
     } while (swapped);
-
-    passes++;
   }
 };
 

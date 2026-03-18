@@ -26,6 +26,7 @@ const hasCycle = (graph) => {
     });
     return false; // no cycles found
   } catch (e) {
+    console.error(e);
     return true;
   }
 };

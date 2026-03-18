@@ -166,7 +166,7 @@ xx = remove(xx, "FK");
 print(xx);
 console.log(xx);
 
-return;
+// return;
 
 console.log(JSON.stringify(xx));
 //print(xx);
@@ -177,7 +177,8 @@ console.log("***********");
 xx = remove(xx, "BED");
 print(xx);
 printWords(xx);
-return;
+
+// return;
 
 console.log("A x   ", find(xx, "A"));
 console.log("ACE   ", find(xx, "ACE"));

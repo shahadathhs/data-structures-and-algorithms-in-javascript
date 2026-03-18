@@ -10,7 +10,7 @@ const memoize = (fn) => {
   return newFn;
 };
 
-const fibo = (n) => {
+let fibo = (n) => {
   //  console.log("FIBO CALLED", n);
   if (n === 0) {
     return 0;
@@ -21,7 +21,8 @@ const fibo = (n) => {
   }
 };
 
-let fibo = memoize(fibo);
+fibo = memoize(fibo);
+console.log(fibo(10));
 
 /*
 const fibo = memoize((n) => {
@@ -54,7 +55,7 @@ console.log(newfibo(25), new Date().getTime() - t);
 
 // console.log(fibo.cache);
 
-function fibo2(n) {
+let fibo2 = (n) => {
   if (n === 0) {
     return 0;
   } else if (n === 1) {
@@ -62,7 +63,7 @@ function fibo2(n) {
   } /* n > 1 */ else {
     return fibo2(n - 2) + fibo2(n - 1);
   }
-}
+};
 
 fibo2 = memoize(fibo2);
 

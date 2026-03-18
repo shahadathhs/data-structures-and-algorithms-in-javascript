@@ -25,6 +25,7 @@ const topologicalSort = (graph) => {
     });
     return sorted;
   } catch (e) {
+    console.error(e);
     return null;
   }
 };

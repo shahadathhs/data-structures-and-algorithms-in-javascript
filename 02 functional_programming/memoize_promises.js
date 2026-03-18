@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const memoize = (fn) => {
   const cache = new Map();
   return (...args) => {

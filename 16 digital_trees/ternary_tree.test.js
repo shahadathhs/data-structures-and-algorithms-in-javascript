@@ -27,7 +27,8 @@ console.log(JSON.stringify(xx));
 printWords(xx);
 console.log("BEAD", find(xx, "BEAD"));
 console.log("BED ", find(xx, "BED"));
-return;
+
+// return;
 
 console.log("A  ", find(xx, "A"));
 console.log("ACE", find(xx, "ACE"));

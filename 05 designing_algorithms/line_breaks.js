@@ -9,6 +9,7 @@ const memoize = (fn) => {
 const MW = 10;
 
 const blocks = [7, 2, 5, 3, 6]; // the original data in the book
+/*
 const blocks2 = [
   // another set: optimum breaks are at 4, 8, 12, 16, 22, 26, 28, 32
   2, // 0
@@ -45,6 +46,7 @@ const blocks2 = [
   1, // 31
   1 // 32
 ];
+*/
 
 const acumW = blocks.reduce((a, c, i) => ((a[i + 1] = a[i] + c), a), [0]);
 const totalWidth = (p, q) => acumW[q + 1] - acumW[p];

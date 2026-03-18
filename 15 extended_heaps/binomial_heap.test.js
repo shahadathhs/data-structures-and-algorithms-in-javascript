@@ -75,5 +75,5 @@ removeFromH();
 
 console.log("*************", top(h));
 print(h);
-changeInH(myNode, 111);
+changeInH(34, 111);
 console.log("*************", top(h));

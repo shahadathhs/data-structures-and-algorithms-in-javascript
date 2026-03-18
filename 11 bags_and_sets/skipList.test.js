@@ -78,7 +78,7 @@ console.log("----------");
 
 console.log("FIND 22", find(sl, 22));
 
-return;
+// return;
 
 console.log("FIND  9", find(sl, 9));
 console.log("FIND 60", find(sl, 60));

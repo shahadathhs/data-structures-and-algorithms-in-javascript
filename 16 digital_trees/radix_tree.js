@@ -165,7 +165,8 @@ xx = add(xx, "ABE");
 console.log(JSON.stringify(xx));
 print(xx);
 printWords(xx);
-return;
+
+// return;
 
 console.log(find(xx, "ACE"), "<");
 console.log(find(xx, "AD"), "<");
